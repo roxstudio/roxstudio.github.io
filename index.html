@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Rox Studio</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="js/vendors/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="js/vendors/examples.css" />
+  
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	 <!-- CSS reset -->
+	 <link rel="stylesheet" href="css/materialize.min.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<style>
+		.no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url("img/loader.gif") center no-repeat #1abc9c;
+	}
+	</style>
+
+
+<style>
+	.pre-load {
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	
+	  z-index: 9999;
+	  background:center no-repeat #1abc9c;
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	  color: white;
+	
+	}
+	
+	#pre-load-content {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  margin-right: -50%;
+	  transform: translate(-50%, -50%);
+	  vertical-align: middle;
+	}
+	
+	#Pre-load-text {
+	  display: inline-block;
+	  padding-left: 10px;
+	  line-height: normal;
+	  vertical-align: middle;
+	}
+	
+	#Pre-load-head-text {
+	  font-size: 300%;
+	  margin: -102px 0px 10px 0px;
+	  font-family: 'Roboto', sans-serif;
+	  font-weight: 700;
+	color:#004D40;
+	}
+	
+	#Pre-load-sub-text {
+	  font-size: 130%;
+	  margin: -3px 0px 0px 0px;
+	  text-align: center;
+	  font-family: 'Roboto', sans-serif;
+		color:#00695C;
+	}
+	
+	.spinner {
+		position: fixed;
+		left: 100px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url("img/loader.gif") center no-repeat ;
+	}
+	.spinner,
+	.spinner:after {
+	  border-radius: 50%;
+	  width: 8em;
+	  height: 8em;
+	
+	}
+
+	
+	</style>
+	
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+      
+   
+				anchors: ['home', 'projects','team','contact'],
+				sectionsColor: ['#311B92', '#0288D1','#00288D1','#FF6F00'],
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['Home', 'Projects','Team','Contact'],
+				responsiveWidth: 900,
+				afterResponsive: function(isResponsive){
+					
+				}
+
+			});
+		});
+	</script>
+
+</head>
+<body bgcolor="black" id="body">
+
+
+	
+		
+		<div class="pre-load">
+		  <div id="pre-load-content">
+			<div class="spinner"></div>
+			<div id="Pre-load-text">
+			<p id="Pre-load-head-text">PLEASE WAIT! </p>
+			 <p id="Pre-load-sub-text">WEBPAGE PAGE IS STILL LOADING</p> 
+			</div>
+		  </div>
+		</div>
+
+	<header>
+		<nav class="cd-stretchy-nav">
+			<a class="cd-nav-trigger" >
+				Menu
+				<span aria-hidden="true"></span>
+			</a>
+	
+			<ul>
+				<li><a href="#home" class="active"><span>Home</span></a></li>
+				<li><a href="#projects"><span>Projects</span></a></li>
+				
+				<li><a href="#team"><span>Team</span></a></li>
+				<li><a href="#contact"><span>Contact</span></a></li>
+			</ul>
+	
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>
+	</header>
+
+  
+<div id="fullpage">
+	<div class="section " id="section0">
+			<div id="particles-js"></div>
+	<div class="container">
+		
+		<div class="intro"  >
+			
+			<div class="o" style="position: absolute;top:45%;left:15%;" >
+				<h1 style="font-size:80px">ROX STUDIO COMMUNITY</h1>
+				
+			<h2 id="moto" >BE INNOVIATIVE DO CREATIVE </h2>
+			
+
+			<!-- scripts -->
+		
+			
+			
+			<!-- stats.js -->
+			
+			<script>
+			  var count_particles, stats, update;
+			  stats = new Stats;
+			  stats.setMode(0);
+			  stats.domElement.style.position = 'relative';
+			  stats.domElement.style.left = '0px';
+			  stats.domElement.style.top = '0px';
+			  document.body.appendChild(stats.domElement);
+			  count_particles = document.querySelector('.js-count-particles');
+			  update = function() {
+				stats.begin();
+				stats.end();
+				if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+				  count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+				}
+				requestAnimationFrame(update);
+			  };
+			  requestAnimationFrame(update);
+			</script>
+
+			</div>
+			
+		</div>
+	</div>
+	   
+	</div>
+	
+	<div class="section" id="section1">
+		<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		
+		<div class="container">
+				<h1 class="headline">Top Projects</h1>
+		<div class="row">
+			
+				<div class="col s12 m4">
+						<div class="card sticky-action">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/desktop.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">Desktop Applications </span>
+									<hr>
+									<p><a href="#" style="font-size:16px;text-align:left;color:black">
+										We had build some best of UX based Platform Independent Desktop Application.
+										
+										
+									</a></p>
+								</div>
+								
+							
+									
+									<br>
+								<div class="card-action">View</div>
+
+		
+							</div>
+						
+						</div>
+						<div class="col s12 m4">
+								<div class="card sticky-action">
+										<div class="card-image waves-effect waves-block waves-light">
+											<img class="activator" src="img/web.jpg">
+										</div>
+										<div class="card-content">
+											<span class="card-title activator grey-text text-darken-4">Web Applications </span>
+											<hr>
+											<p><a href="#" style="font-size:16px;text-align:left;color:black">
+													We had build some best of UX based Platform Independent Desktop Application.
+												
+											</a></p>
+										</div>
+										
+									
+											
+											<br>
+										<div class="card-action">View</div>
+		
+				
+									</div>
+								
+								</div>
+								<div class="col s12 m4">
+										<div class="card sticky-action">
+												<div class="card-image waves-effect waves-block waves-light">
+													<img class="activator" src="img/more.jpg">
+												</div>
+												<div class="card-content">
+													<span class="card-title activator grey-text text-darken-4">More </span>
+													<hr>
+													<p><a href="#" style="font-size:16px;text-align:left;color:black">
+														We had build some Best of UX based Platform Independent Desktop Application.
+														
+													</a></p>
+												</div>
+												
+											
+													
+													<br>
+												<div class="card-action">View</div>
+				
+						
+											</div>
+										
+										</div>
+				
+
+
+
+				
+			  </div>
+			
+		  </div>
+		</div>
+	
+
+
+<div class="section" id="section3">
+	<div class="conatiner">
+  <div class="intro">
+		<h1>OUR AMAZING TEAM</h1>
+		<p>TEAM!
+				Founded in 2015, we strive to be the best at what we do. This is made possible by our amazing
+				 team of Professionals.
+		</p>
+		
+
+		
+	
+	</div>
+</div>
+</div>
+<div class="section" id="section4">
+
+	<div class="container" >	
+		<div style="background:#4527A0;">
+		<br>
+	<div class="intro" >
+			
+		  <h1>CONTACT US</h1>
+		  <p style="color:rgb(189, 186, 186);font-size:19px ">Drop us a message and we will see you soon.</p>
+		</div>
+		  <center >
+		  <div class="row">
+			  
+			<form class="col s10">
+			  <div class="row">
+				<div class="input-field col s6">
+				  <i class="material-icons prefix">account_circle</i>
+				  <input id="icon_prefix" type="text" class="validate" >
+				  <label for="text">First Name</label>
+				</div>
+				<div class="input-field col s6">
+				  <i class="material-icons prefix">account_circle</i>
+				  <input id="telephone" type="text" class="validate" >
+				  <label for="text">Second name</label>
+				</div>
+			  </div>
+			  <div class="row">
+			  <div class="input-field col s6">
+				  <i class="material-icons prefix">contact_mail</i>
+				  <input id="email" type="text" class="validate">
+				  <label for="contact_mail">Email</label>
+				</div>
+			</div>
+			<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">contact_phone</i>
+						<input id="email" type="text"  class="validate" >
+						<label for="contact_mail">Phone no.</label>
+					  </div>
+				  </div>
+			<div class="row">
+					<div class="col s12">
+					  <div class="row">
+						<div class="input-field col s12">
+						  <i class="material-icons prefix">mode_edit</i>
+						  <textarea id="icon_prefix2" class="materialize-textarea" type="text" class="validate"></textarea>
+						  <label for="icon_prefix2">Message</label>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+			<div class="row">
+					<div class="col s12">
+					<a class="waves-effect waves-light btn">Send Message</a>
+					<a class="waves-effect waves-light btn">cancel</a>
+					
+			<div>
+				</div>	  
+			</form>
+		
+		  </div>
+		</center>
+		</div>
+		
+	</div>
+	  </div>
+</div>
+
+<script src="js/modernizr.js"></script>	 
+
+<!-- Fullpage js-->
+<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/vendors/examples.js"></script>
+<!-- typing-->
+<script type="text/javascript" src="js/typed.min.js"></script>
+<script language="Javascript">
+    window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        document.getElementById('body').innerHTML="<center><p style='margin-top:40%'>Device Resolution Must is More than 960px</p></center>";  
+    } else {
+
+    }
+  }
+  </script>
+<script>
+		var typed2 = new Typed('#moto', {
+strings: ['','The Community for the <strong>Developers</strong> by the <strong>Developers</strong>','Be <strong>Creative</strong> Do <strong>Innovative</strong>','Build beyond the Imagination'],
+backDelay: 5500,
+typeSpeed: 40,
+backSpeed: 10,
+cursorChar: '',
+
+
+
+loop: true,
+});
+	  </script>
+	  <script type="text/javascript">
+
+		//  $(".se-pre-con").delay(1000).fadeOut("slow");
+	  
+			$(".pre-load").delay(2000).slideDown();
+			$(".pre-load").fadeOut("slow");
+	  
+	  
+	  </script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<!-- Material js -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/main.js"></script> 
+
+</body>
+</html>
