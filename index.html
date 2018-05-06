@@ -47,11 +47,43 @@
 		</script>
 	<![endif]-->
 
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="js/modernizr.js"></script>	 
+
+<!-- Fullpage js-->
+<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/vendors/examples.js"></script>
+<!-- typing-->
+<script type="text/javascript" src="js/typed.min.js"></script>
+<script language="Javascript">
+    window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        document.getElementById('body').innerHTML="<center><p style='margin-top:40%'>Device Resolution Must is More than 960px</p></center>";  
+    } else {
+
+    }
+  }
+  </script>
+<script>
+		var typed2 = new Typed('#moto', {
+strings: ['','The Community for the <strong>Developers</strong> by the <strong>Developers</strong>','Be <strong>Creative</strong> Do <strong>Innovative</strong>','Build beyond the Imagination'],
+backDelay: 5500,
+typeSpeed: 40,
+backSpeed: 10,
+cursorChar: '',
+
+
+
+loop: true,
+});
+	  </script>
 	 <!-- CSS reset -->
 	 <link rel="stylesheet" href="css/materialize.min.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -422,37 +454,7 @@
 	  </div>
 </div>
 
-<script src="js/modernizr.js"></script>	 
 
-<!-- Fullpage js-->
-<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
-<script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
-<script type="text/javascript" src="js/vendors/examples.js"></script>
-<!-- typing-->
-<script type="text/javascript" src="js/typed.min.js"></script>
-<script language="Javascript">
-    window.onload=function(){
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
-        document.getElementById('body').innerHTML="<center><p style='margin-top:40%'>Device Resolution Must is More than 960px</p></center>";  
-    } else {
-
-    }
-  }
-  </script>
-<script>
-		var typed2 = new Typed('#moto', {
-strings: ['','The Community for the <strong>Developers</strong> by the <strong>Developers</strong>','Be <strong>Creative</strong> Do <strong>Innovative</strong>','Build beyond the Imagination'],
-backDelay: 5500,
-typeSpeed: 40,
-backSpeed: 10,
-cursorChar: '',
-
-
-
-loop: true,
-});
-	  </script>
 	  <script type="text/javascript">
 
 		//  $(".se-pre-con").delay(1000).fadeOut("slow");
