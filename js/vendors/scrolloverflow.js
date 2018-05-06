@@ -1,9 +1,4 @@
-/**
-* Customized version of iScroll.js 0.0.8
-* It fixes bugs affecting its integration with fullpage.js
-* @license
-*/
-/*! iScroll v5.2.0 ~ (c) 2008-2016 Matteo Spinelli ~ http://cubiq.org/license */
+
 (function (window, document, Math) {
 var rAF = window.requestAnimationFrame  ||
     window.webkitRequestAnimationFrame  ||
